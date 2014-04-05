@@ -13,3 +13,5 @@ Simple: `gcc -o stripper stripper.c`
 * Nearby job oppurtunities lookup
 * A most spontanious random name generator
 * Killer robot army
+<br><br><br>
+![Be Excellent To Each Other!](https://24.media.tumblr.com/tumblr_mcydrdlEcf1rbzp42o1_500.gif)

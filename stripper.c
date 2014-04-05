@@ -15,7 +15,7 @@ int main(int argc, char const *argv[])
 	// get second name
 	printf("Enter your second name: ");
 	fgets(nameSecond, 12, stdin);
-	// removes carriage return from nameFirst that fgets collects
+	// removes carriage return from nameFirst that fgets() collects
 	strtok(nameFirst, "\n");
 	printf("\nYour name: %s %s\n", nameFirst, nameSecond);
 

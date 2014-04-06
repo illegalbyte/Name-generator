@@ -20,12 +20,10 @@ int main(int argc, char const *argv[])
 	char stripperName[14];
 	char stripperName2[14];
 
-	// get first name
-	printf("Enter your first name: ");
-	fgets(nameFirst, 12, stdin);
-	// get second name
-	printf("Enter your second name: ");
-	fgets(nameSecond, 12, stdin);
+
+
+	// display start message
+	printf( ANSI_COLOR_YELLOW "PROGRAM START...\n\n" ANSI_COLOR_RESET);
 
 	// Gets first name, making sure that the first char is uppercase
 		do 
@@ -279,5 +277,6 @@ int main(int argc, char const *argv[])
 
 	printf("Your stripper name: %s %s\n\n", stripperName, stripperName2);
 
+	printf( ANSI_COLOR_YELLOW "PROGRAM END.\n" ANSI_COLOR_RESET);
 	return 0;
 }

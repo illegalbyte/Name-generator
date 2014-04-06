@@ -242,7 +242,7 @@ int main(int argc, char const *argv[])
 		break;
 
 		case 'S':
-		strcpy(stripperName2, "Stacy");
+		strcpy(stripperName2, "Stormcloak");
 		break;
 
 		case 'T':

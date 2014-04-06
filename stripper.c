@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 // allows for ANSI colours
 #define ANSI_COLOR_RED     "\x1b[31m"
@@ -25,6 +26,43 @@ int main(int argc, char const *argv[])
 	// get second name
 	printf("Enter your second name: ");
 	fgets(nameSecond, 12, stdin);
+
+	// Gets first name, making sure that the first char is uppercase
+		do 
+		{
+			// Warns about uppercase:
+			int i = 0;
+			if (i > 0)
+			{
+				printf("Uppercase only!\n");
+			}
+			i++;
+
+			// Asks user for name and stores it in it's respective array:
+			printf("Enter your first name: ");
+			fgets(nameFirst, 12, stdin);
+		}
+		while (isupper(nameFirst[0]) == 0);
+
+	
+	// Gets second name, making sure that the first char is uppercase
+		do 
+		{
+			// Warns about uppercase:
+			int i = 0;
+			if (i > 0)
+			{
+				printf("Uppercase only!\n");
+			}
+			i++;
+
+			// Asks user for name and stores it in it's respective array:
+			printf("Enter your second name: ");
+			fgets(nameSecond, 12, stdin);
+		} 
+		while (isupper(nameSecond[0]) == 0);
+
+
 	// removes carriage return from nameFirst that fgets() collects
 	strtok(nameFirst, "\n");
 	printf("\nYour name: %s %s\n", nameFirst, nameSecond);

@@ -275,7 +275,8 @@ int main(int argc, char const *argv[])
 	}
 
 
-	printf("Your stripper name: %s %s\n\n", stripperName, stripperName2);
+	printf(ANSI_COLOR_RED "Your stripper name: %s %s\n\n" ANSI_COLOR_RESET, stripperName, stripperName2);
+
 
 	printf( ANSI_COLOR_YELLOW "PROGRAM END.\n" ANSI_COLOR_RESET);
 	return 0;

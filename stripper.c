@@ -20,7 +20,7 @@ int main(int argc, char const *argv[])
 	char stripperName[14];
 	char stripperName2[14];
 
-
+	int i = 0;
 
 	// display start message
 	printf( ANSI_COLOR_YELLOW "PROGRAM START...\n\n" ANSI_COLOR_RESET);
@@ -29,10 +29,9 @@ int main(int argc, char const *argv[])
 		do 
 		{
 			// Warns about uppercase:
-			int i = 0;
 			if (i > 0)
 			{
-				printf("Uppercase only!\n");
+				printf(ANSI_COLOR_RED "Uppercase only!\n" ANSI_COLOR_RESET);
 			}
 			i++;
 
@@ -42,15 +41,16 @@ int main(int argc, char const *argv[])
 		}
 		while (isupper(nameFirst[0]) == 0);
 
-	
+	// resets int i, so the if statement works	
+	i = 0;
+
 	// Gets second name, making sure that the first char is uppercase
 		do 
 		{
 			// Warns about uppercase:
-			int i = 0;
 			if (i > 0)
 			{
-				printf("Uppercase only!\n");
+				printf(ANSI_COLOR_RED "Uppercase only!\n" ANSI_COLOR_RESET);
 			}
 			i++;
 

@@ -14,7 +14,8 @@
 
 int main(int argc, char const *argv[])
 {
-	
+
+
 	char nameFirst[12];
 	char nameSecond[12];
 	char stripperName[14];
@@ -272,6 +273,11 @@ int main(int argc, char const *argv[])
 		case 'Z':
 		strcpy(stripperName2, "ZELDA");
 		break;
+
+		default:
+		printf("well... that didn't go as expected.\n");
+		break;
+
 	}
 
 
